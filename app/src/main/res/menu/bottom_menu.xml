@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+    <item
+        android:id="@+id/account"
+        android:orderInCategory="300"
+        android:title="Account"
+        android:icon="@drawable/ic_person_black_24dp"
+        ></item>
+    <item
+        android:id="@+id/home"
+        android:orderInCategory="100"
+        android:title="Home"
+        android:icon="@drawable/sgdfgdfgd">
+
+    </item>
+    <item
+        android:id="@+id/create"
+        android:orderInCategory="200"
+        android:title="Add New "
+        android:icon="@drawable/ic_add_box_black_24dp">
+
+    </item>
+
+
+</menu>

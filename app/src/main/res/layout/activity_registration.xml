@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="130dp"
+        android:layout_above="@id/input_group"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="65dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="61dp"
+
+            android:src="@drawable/sc_reen" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/input_group"
+        android:layout_width="367dp"
+        android:layout_height="496dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Activity_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_email"
+
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_bottom"
+                android:hint="Email"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="#fefefe"
+                android:textColorHint="#ffffff"
+                android:textSize="20sp" />
+
+            />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_inputlayout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_username"
+
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_bottom"
+                android:hint="Username"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="#fefefe"
+                android:textColorHint="#ffffff"
+                android:textSize="20sp" />
+
+            />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_password"
+
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_bottom"
+                android:hint="Password"
+                android:maxLength="17"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="#fefefe"
+                android:textColorHint="#ffffff"
+                android:textSize="20sp" />
+
+            />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+        <Button
+            android:id="@+id/SignUp"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="SIGN UP"
+            android:textAllCaps="false"
+            android:textColor="#fefefe"
+            android:textSize="17sp" />
+
+
+        <TextView
+            android:id="@+id/user_back"
+            android:layout_width="336dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="120dp"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="40dp"
+            android:text="Already a member? Sign in"
+            android:textColor="#21a9b5"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

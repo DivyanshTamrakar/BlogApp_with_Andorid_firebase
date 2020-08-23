@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefefe">
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:elevation="4dp"
+        android:src="@drawable/images"
+        app:civ_border_color="#000000"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#a9a9a9"
+        app:civ_shadow_radius="10" />
+
+
+    <TextView
+        android:id="@+id/profilename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/image"
+
+        android:text="Your Name"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/viewpro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilename"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@+id/image"
+        android:background="@drawable/viewprofilebutton"
+        android:paddingLeft="65dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:text="View Profile"
+        android:textColor="#fefefe"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        />
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="30dp"
+    android:layout_below="@id/image"
+    android:layout_marginTop="70dp"
+    android:elevation="30dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="30dp"
+    app:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/intrest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/myintrest"
+            android:textAlignment="center"
+            android:padding="30dp"
+            android:text="My Interests"
+            android:textColor="#000000"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_below="@id/intrest"
+            android:background="@drawable/items"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="17dp"
+            android:padding="10dp"
+            android:text="music"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/items"
+            android:padding="10dp"
+            android:layout_below="@+id/intrest"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@+id/music"
+            android:text="food"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/culture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/items"
+            android:padding="10dp"
+            android:layout_below="@+id/intrest"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@+id/food"
+            android:text="culture"
+
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/drink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/items"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_below="@+id/music"
+            android:text="Drink"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/items"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_below="@+id/food"
+            android:layout_toRightOf="@+id/drink"
+            android:text="sports"
+            android:textSize="25dp" />
+
+
+        <TextView
+            android:id="@+id/travel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/items"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:layout_below="@+id/culture"
+            android:layout_toRightOf="@+id/sports"
+            android:text="Travel"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/fun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/items"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="17dp"
+            android:padding="10dp"
+            android:layout_below="@+id/drink"
+            android:text="Fun"
+            android:textSize="25dp" />
+
+
+
+        <TextView
+            android:id="@+id/bussiness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/items"
+            android:layout_marginTop="17dp"
+            android:padding="10dp"
+            android:layout_below="@+id/drink"
+            android:layout_toRightOf="@+id/fun"
+            android:text="bussiness"
+            android:textSize="25dp" />
+
+
+
+        <TextView
+            android:id="@+id/art"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/items"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_below="@+id/travel"
+            android:layout_toRightOf="@id/bussiness"
+            android:text="art"
+            android:textSize="25dp" />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

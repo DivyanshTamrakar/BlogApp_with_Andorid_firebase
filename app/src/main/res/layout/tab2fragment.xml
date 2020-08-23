@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutlinear"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fefefe"
+    android:theme="@style/AppTheme.NoActionBar">
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/addtitle"
+        android:hint="Add a Title"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColorHint="#A9A9A9" />
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/addtitle"
+        android:hint="Add a Full Description"
+        android:inputType="textMultiLine"
+        android:padding="20dp"
+        android:textColorHint="#A9A9A9" />
+
+    <ImageView
+        android:id="@+id/google"
+        android:layout_width="322dp"
+        android:layout_height="135dp"
+        android:layout_below="@id/editText2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/googleg_standard_color_18" />
+
+
+    <ImageButton
+        android:id="@+id/btnfolder"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/google"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="10dp"
+
+         android:src="@drawable/ic_menu_camera"
+        android:textColor="#000000" />
+
+
+
+
+    <Button
+        android:id="@+id/btnpublish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/btnfolder"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/resetpassbtn"
+        android:text="Publish"
+        android:elevation="4dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000000" />
+
+    <ProgressBar
+        android:id="@+id/tambu"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+
+
+        android:visibility="gone" />
+
+
+</RelativeLayout>
